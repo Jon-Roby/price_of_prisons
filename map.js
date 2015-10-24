@@ -159,15 +159,26 @@ var state_data = {
 }
 
 var map = new Datamap({
-          element: document.getElementById('container'),
+          element: document.getElementById('map'),
+          fills: {
+            defaultFill: 'black'
+          },
+          responsive: true,
           scope: 'usa',
           data: state_data,
           geographyConfig: {
+            borderWidth: -1,
             popupTemplate: function(geo, data) {
                 return ['<div class="hoverinfo"><strong>',
                         'Cost in ' + geo.properties.name,
                         ': ' + numberWithCommas(data.cost),
                         '</strong></div>'].join('');
-            }
+            },
+            highlightFillColor: '87D37C',
+            highlightBorderColor: '87D37C'
         }
       });
+
+window.addEventListener('resize', function() {
+        map.resize();
+    });

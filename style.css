@@ -1,15 +1,28 @@
-#container {
-	position: relative; 
-	width: 1000px;
-	height: 600px;
-}
-
-body {
-
-
-
-}
+/*#container {
+	display: flex;
+	
+	
+}*/
 
 h1 {
-		font-size: 400%;
+	font-size: 400%;
 }
+
+#test {
+	padding-left: 100px;
+	padding-right: 100px;
+	display: flex;
+	justify-content: center;
+}
+
+#map {
+
+	
+}
+
+#text {
+	padding-right: -1000px;
+}
+
+
+
