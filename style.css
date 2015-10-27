@@ -1,28 +1,74 @@
-/*#container {
+#contain {
 	display: flex;
-	
-	
-}*/
-
-h1 {
-	font-size: 400%;
-}
-
-#test {
-	padding-left: 100px;
-	padding-right: 100px;
-	display: flex;
-	justify-content: center;
-}
-
-#map {
-
+	justify-content: space-between;
 	
 }
 
 #text {
-	padding-right: -1000px;
+	align-items: center;
+	white-space: no-wrap;
 }
+
+h1 {
+	font-size: 350%;
+}
+
+body {
+	padding-top: 50px;
+	background-color: white;
+}
+
+
+#map {
+
+
+}
+
+.paddingbottom {
+	padding-top: 5px;
+	padding-bottom: 8px ;
+}
+
+.datamap {
+	width: 1000px;
+	height: 600px;
+}
+
+#state, #preState  {
+	background-color: #303030;
+  color: white;
+}
+
+#money, #preMoney {
+  background-color: #bd081c;
+  color: white;
+}
+
+#non-violent {
+	background-color: #303030;
+  color: white;
+}
+
+#year {
+	background-color: #303030;
+  color: white;
+	
+}
+
+.clear {
+	background-color: white;
+	color: black;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

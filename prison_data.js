@@ -313,6 +313,7 @@ for (var i = 0; i < data.length; i++) {
 	abbr = data[i].abbreviation;
 	var cost = data[i].cost * 1000 / 2
 	result[abbr] = {
+    state: data[i].state,
 		cost: cost
 	};
 }
